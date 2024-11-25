@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lyrics4U</title>
+    <link rel="shortcut icon" href="assets/music.png" type="image/x-icon" />
+    <link href="/dist/styles.css" rel="stylesheet" />
+  </head>
+  <body class="bg-black">
+    <main>
+      <section class="flex items-center p-10 flex-col">
+        <div
+          class="border-solid border-2 border-cyan-100 p-5 max-w-lg h-auto shadow-md shadow-cyan-200"
+        >
+          <h1 class="text-white text-6xl">Lyrics4U</h1>
+          <p class="mt-5 text-center text-cyan-100">
+            search the lyrics of a song
+          </p>
+        </div>
+        <div class="mt-10 flex flex-col w-full max-w-lg">
+          <label for="search" class="text-white text-xl font-bold"
+            >Search</label
+          >
+          <input
+            id="search"
+            type="text"
+            class="rounded-md border-solid border-t-0 shadow-md shadow-cyan-300 border-cyan-100 border-2 outline outline-transparent h-10"
+          />
+        </div>
+        <div
+          id="songs"
+          class="flex flex-col justify-center w-5/6 md:w-[500px] mt-5"
+        ></div>
+        <div
+          id="lyrics"
+          class="flex mt-8 pl-5 bg-black text-white justify-center"
+        ></div>
+      </section>
+    </main>
+    <script src="./app.js" />
+  </body>
+</html>
